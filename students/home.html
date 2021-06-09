@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Занятия | Easy learn</title>
+   <link rel="icon" type="image/svg" sizes="32x32" href="sprites/logo.svg">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+   <div class="container">
+      <div class="wrapper" id="wrapper1">
+         <div class="div-wrapper">
+            <div class="logo__div-wrapper">
+               <a href="../log_into_page/loginto.html"><img class="logo" src="sprites/bookmark.svg" alt="logo"></a>
+               <span class="span__logo-div-wrapper" id="namePage">Уроки</span>
+            </div>
+            <div class="profile__div-wrapper">
+               <a href="profile.html"><img class="profile" src="sprites/user.svg" alt="profile" id="profileH"></a>
+            </div>
+         </div>
+      </div>
+      <div class="page">
+         <div class="menu">
+            <a href="#" class="subjects">
+               <img class="img__subjects" src="sprites/t-lesson.svg" alt="book">
+            </a>
+            <a href="statistics.html" class="statistics">
+               <img class="img__statistics" src="sprites/statistics.svg" alt="statistics">
+            </a>
+         </div>
+         <div class="choose-subjects" id="chooseSub">
+            <div class="algebra__choose-subjects c-choose-subject">
+               <div class="subject__choose-subject">
+                  <h3 class="subname">Алгебра</h3>
+                  <img src="sprites/algebra.svg" alt="algebra">
+               </div>
+               <div class="line"></div>
+               <a href="#" class="choose__choose-subject" onclick="show1();">Выбрать</a>
+            </div>
+            <div class="geometry__choose-subjects c-choose-subject">
+               <div class="subject__choose-subject">
+                  <h3 class="subname">Геометрия</h3>
+                  <img src="sprites/geom.svg" alt="geometry">
+               </div>
+               <div class="line"></div>
+               <a href="#" class="choose__choose-subject" onclick="show2();">Выбрать</a>
+            </div>
+            <div class="russian__choose-subjects c-choose-subject">
+               <div class="subject__choose-subject">
+                  <h3 class="subname">Русский язык</h3>
+                  <img src="sprites/russian.svg" alt="russian">
+               </div>
+               <div class="line"></div>
+               <a href="#" class="choose__choose-subject" onclick="show3();">Выбрать</a>
+            </div>
+            <div class="ukrainian__choose-subjects c-choose-subject">
+               <div class="subject__choose-subject">
+                  <h3 class="subname">Украинский язык</h3>
+                  <img src="sprites/ukrainian.svg" alt="ukrainian">
+               </div>
+               <div class="line"></div>
+               <a href="#" class="choose__choose-subject" onclick="show4();">Выбрать</a>
+            </div>
+            <div class="english__choose-subjects c-choose-subject">
+               <div class="subject__choose-subject">
+                  <h3 class="subname">Английский язык</h3>
+                  <img src="sprites/english.svg" alt="english">
+               </div>
+               <div class="line"></div>
+               <a href="#" class="choose__choose-subject" onclick="show5();">Выбрать</a>
+            </div>
+            <div class="ukr-history__choose-subjects c-choose-subject">
+               <div class="subject__choose-subject">
+                  <h3 class="subname">История Украины</h3>
+                  <img src="sprites/history.svg" alt="ukr-history">
+               </div>
+               <div class="line"></div>
+               <a href="#" class="choose__choose-subject" onclick="show6();">Выбрать</a>
+            </div>
+            <div class="world-history__choose-subjects c-choose-subject">
+               <div class="subject__choose-subject">
+                  <h3 class="subname">Всемирная история</h3>
+                  <img src="sprites/w-history.svg" alt="world-history">
+               </div>
+               <div class="line"></div>
+               <a href="#" class="choose__choose-subject" onclick="show7();">Выбрать</a>
+            </div>
+            <div class="jurusprudence__choose-subjects c-choose-subject">
+               <div class="subject__choose-subject">
+                  <h3 class="subname">Правоведенье</h3>
+                  <img src="sprites/jurispr.svg" alt="jurusprudence">
+               </div>
+               <div class="line"></div>
+               <a href="#" class="choose__choose-subject" onclick="show8();">Выбрать</a>
+            </div>
+            <div class="geography__choose-subjects c-choose-subject">
+               <div class="subject__choose-subject">
+                  <h3 class="subname">География</h3>
+                  <img src="sprites/geography.svg" alt="geography">
+               </div>
+               <div class="line"></div>
+               <a href="#" class="choose__choose-subject" onclick="show9();">Выбрать</a>
+            </div>
+            <div class="economic__choose-subjects c-choose-subject">
+               <div class="subject__choose-subject">
+                  <h3 class="subname">Экономика</h3>
+                  <img src="sprites/economic.svg" alt="economic">
+               </div>
+               <div class="line"></div>
+               <a href="#" class="choose__choose-subject" onclick="show10();">Выбрать</a>
+            </div>
+            <div class="ukr-literature__choose-subjects c-choose-subject">
+               <div class="subject__choose-subject">
+                  <h3 class="subname">Украинская литература</h3>
+                  <img src="sprites/ukr-literature.svg" alt="ukr-literature">
+               </div>
+               <div class="line"></div>
+               <a href="#" class="choose__choose-subject" onclick="show11();">Выбрать</a>
+            </div>
+            <div class="world-literature__choose-subjects c-choose-subject">
+               <div class="subject__choose-subject">
+                  <h3 class="subname">Зарубежная литература</h3>
+                  <img src="sprites/w-literature.svg" alt="world-literature">
+               </div>
+               <div class="line"></div>
+               <a href="#" class="choose__choose-subject" onclick="show12();">Выбрать</a>
+            </div>
+            <div class="biology__choose-subjects c-choose-subject">
+               <div class="subject__choose-subject">
+                  <h3 class="subname">Биология</h3>
+                  <img src="sprites/biology.svg" alt="biology">
+               </div>
+               <div class="line"></div>
+               <a href="#" class="choose__choose-subject" onclick="show13();">Выбрать</a>
+            </div>
+            <div class="chemistry__choose-subjects c-choose-subject">
+               <div class="subject__choose-subject">
+                  <h3 class="subname">Химия</h3>
+                  <img src="sprites/chemistry.svg" alt="chemistry">
+               </div>
+               <div class="line"></div>
+               <a href="#" class="choose__choose-subject" onclick="show14();">Выбрать</a>
+            </div>
+            <div class="physic__choose-subjects c-choose-subject">
+               <div class="subject__choose-subject">
+                  <h3 class="subname">Физика</h3>
+                  <img src="sprites/physic.svg" alt="it">
+               </div>
+               <div class="line"></div>
+               <a href="#" class="choose__choose-subject" onclick="show15();">Выбрать</a>
+            </div>
+            <div class="it__choose-subjects c-choose-subject">
+               <div class="subject__choose-subject">
+                  <h3 class="subname">Информатика</h3>
+                  <img src="sprites/it.svg" alt="it">
+               </div>
+               <div class="line"></div>
+               <a href="#" class="choose__choose-subject" onclick="show16();">Выбрать</a>
+            </div>
+            <div class="technology__choose-subjects c-choose-subject">
+               <div class="subject__choose-subject">
+                  <h3 class="subname">Трудовое обучение</h3>
+                  <img src="sprites/tech.svg" alt="technology">
+               </div>
+               <div class="line"></div>
+               <a href="#" class="choose__choose-subject" onclick="show17();">Выбрать</a>
+            </div>
+         </div>
+         <div class="lesson" id="lesson">
+            <div class="rec__lesson">
+               <a href="#"><div class="rec-passive__lesson rec-choose__lesson" onclick="showLess1();">1</div></a>
+               <a href="#"><div class="rec-passive__lesson rec-choose__lesson" onclick="showLess2();">2</div></a>
+               <a href="#"><div class="rec-passive__lesson rec-choose__lesson" onclick="showLess3();">3</div></a>
+               <a href="#"><div class="rec-passive__lesson rec-choose__lesson" onclick="showLess4();">4</div></a>
+               <a href="#"><div class="rec-active__lesson rec-choose__lesson" onclick="showLess5();">5</div></a>
+            </div>
+            <div class="lesson5__lesson lesson__lesson" id="less5">
+               <div>
+                  <div>
+                     <h3 class="name__lesson">Урок 5</h3>
+                     <h4 class="theme__lesson">Многочлен и его свойства</h4>
+                  </div>
+                  <h5 class="date__lesson">11.01.2021</h5>
+               </div>
+               <div class="line"></div>
+               <h3 class="letter__lesson">Теория урока</h3>
+               <p class="theory__lesson">
+                  <b>Многочленом</b> называется алгебрагична сумма нескольких одночленов.<br>
+
+                  <i>Например:</i> 3xy + ab + 2, 7 {x ^ 2} b - 2xy + a - многочлены.<br>
+              
+                  Одночлены, из которых состоит многочлен, называют его членами. <b>Одночлен</b> - отдельный вид многочлена. Многочлен, содержащий два или три слагаемых, называют соответственно <b>двучленом или трехчленом</b>.<br>
+              
+                  <i>Например:</i> {a ^ 2} - {b ^ 2}, x + y - двучлен; a + ab + b, {x ^ 2} + xy - {y ^ 2} - трехчлена.<br>
+              
+                  <b>Подобные члены многочлена</b>- это одинаковые одночлены, или одночлены, запись которых в стандартном виде отличается только коэффициентами.<br>
+              
+                  <i>Например:</i> в многочлене 15 {a ^ 2} b + 3a {b ^ 2} - 7 {a ^ 2} b + 5a {b ^ 2} первый и третий, второй и четвертый члены подобные.<br>
+              
+                  <b>Возведение подобных членов</b> - это упрощение многочлена, когда алгебрагична сумма подобных членов заменяется одним членом. Чтобы свести подобные члены, надо добавить их коэффициенты и результат умножить на их общую буквенную часть.<br>
+              
+                  <i>Например:</i> 15 {a ^ 2} b + 3a {b ^ 2} - 7 {a ^ 2} b + 5a {b ^ 2} = 8 {a ^ 2} b + 8a {b ^ 2}.<br>
+              
+                  <b>Стандартный вид многочлена</b> - это запись многочлена, все члены которого имеют стандартный вид и среди них нет подобных.<br>
+              
+                  <i>Например:</i> {a ^ 2} - ab + {b ^ 2}, ab + bc + ac - многочлены стандартного вида, а 3 {a ^ 2} + 2 {b ^ 2} - 3ab + {a ^ 2} - многочлен нестандартного вида.<br>
+              
+                  <b>Степенью многочлена стандартного вида</b> называют самый большой из степеней одночленов, из которых состоит многочлен. Степенью произвольного многочлена называют степень тождественно равного ему многочлена стандартного вида.<br>
+              
+                  <i>Например:</i> степень многочлена 5 {a ^ 7} b + 5a {b ^ 5} - 2 {a ^ 5} {b ^ 5} равна степени одночлена 2 {a ^ 5} {b ^ 5}, то есть 5 + 5 = 10.</p>
+                  <div class="line"></div>
+                  <div>
+                     <div>
+                        <h3 class="title-hw__lesson">Домашнее задание</h3>
+                        <p class="hw__lesson">Выполнить упражнения из учебника №45, 47, 48 (1-3), 49 в тетради и прикрепить фото выполненного домашнего задания сюда.</p>
+                     </div>
+                     <h5 class="hw-date__lesson">Сдать 11.01.2021 (до 14:00) </h5>
+                  </div>
+                  <label>
+                     Сдать домашнее задание<br>
+                     <input class="input__lesson" type="file" value="Загрузить домашнее задание">
+                  </label>
+            </div>
+            <div class="lesson4__lesson lesson__lesson" id="less4">
+               <div>
+                  <div>
+                     <h3 class="name__lesson">Урок 4</h3>
+                     <h4 class="theme__lesson">Неравенства, системы неравенств и действия с ними</h4>
+                  </div>
+                  <h5 class="date__lesson">08.01.2021</h5>
+               </div>
+               <div class="line"></div>
+               <h3 class="letter__lesson">Теория урока</h3>
+               <p class="theory__lesson">
+                  Читаем в учебнике на страницах 119 - 120
+               </p>
+                  <div class="line"></div>
+                  <div>
+                     <div>
+                        <h3 class="title-hw__lesson">Домашнее задание</h3>
+                        <p class="hw__lesson">Выполнить упражнения из учебника №41 и прикрепить фото выполненного домашнего задания сюда.</p>
+                     </div>
+                     <h5 class="hw-date__lesson">Сдать 08.01.2021 (до 14:00) </h5>
+                  </div>
+                  <label>
+                     Сдать домашнее задание<br>
+                     <input class="input__lesson" type="file" value="Загрузить домашнее задание">
+                  </label>
+            </div>
+            <div class="lesson3__lesson lesson__lesson" id="less3">
+               <div>
+                  <div>
+                     <h3 class="name__lesson">Урок 3</h3>
+                     <h4 class="theme__lesson">Неравенства и действия с ними</h4>
+                  </div>
+                  <h5 class="date__lesson">06.01.2021</h5>
+               </div>
+               <div class="line"></div>
+               <h3 class="letter__lesson">Теория урока</h3>
+               <p class="theory__lesson">
+                  <a href="https://www.youtube.com/watch?v=rDTRKw0fEiw"><b>https://www.youtube.com/watch?v=rDTRKw0fEiw</b></a>
+               </p>
+                  <div class="line"></div>
+                  <div>
+                     <div>
+                        <h3 class="title-hw__lesson">Домашнее задание</h3>
+                        <p class="hw__lesson">Посмотреть и разобраться с теорией урока (ссылка выше)</p>
+                     </div>
+                     <h5 class="hw-date__lesson">Сдать 06.01.2021 (до 14:00) </h5>
+                  </div>
+                  <label>
+                     Сдать домашнее задание<br>
+                     <input class="input__lesson" type="file" value="Загрузить домашнее задание">
+                  </label>
+            </div>
+            <div class="lesson2__lesson lesson__lesson" id="less2">
+               <div>
+                  <div>
+                     <h3 class="name__lesson">Урок 2</h3>
+                     <h4 class="theme__lesson">Тест по пройденному материалу</h4>
+                  </div>
+                  <h5 class="date__lesson">04.01.2021</h5>
+               </div>
+               <div class="line"></div>
+               <h3 class="letter__lesson">Теория урока</h3>
+               <p class="theory__lesson">
+                  Выполнить задания из учебника:<br>
+                  <b>1 вариант</b> - №37 (1-3), №39, №40 (1-6)<br>
+                  <b>2 вариант</b> - №37 (3-6), №38, №40 (6-12)
+               </p>
+                  <div class="line"></div>
+                  <div>
+                     <div>
+                        <h3 class="title-hw__lesson">Домашнее задание</h3>
+                        <p class="hw__lesson">Выполнить в тетради упражнения и прикрепить фото самостаятельной работы.</p>
+                     </div>
+                     <h5 class="hw-date__lesson">Сдать 04.01.2021 (с 11:00 до 12:00) </h5>
+                  </div>
+                  <label>
+                     Сдать домашнее задание<br>
+                     <input class="input__lesson" type="file" value="Загрузить домашнее задание">
+                  </label>
+            </div>
+            <div class="lesson1__lesson lesson__lesson" id="less1">
+               <div>
+                  <div>
+                     <h3 class="name__lesson">Урок 1</h3>
+                     <h4 class="theme__lesson">Повторение пройденного материала</h4>
+                  </div>
+                  <h5 class="date__lesson">01.01.2021</h5>
+               </div>
+               <div class="line"></div>
+               <h3 class="letter__lesson">Теория урока</h3>
+               <p class="theory__lesson">
+                  <a href="https://www.youtube.com/watch?v=cAbUCbP-XIk"><b>https://www.youtube.com/watch?v=cAbUCbP-XIk</b></a><br>
+                  <a href="https://www.youtube.com/watch?v=bCp_PbqhDIY"><b>https://www.youtube.com/watch?v=bCp_PbqhDIY</b></a><br>
+                  <a href="https://www.youtube.com/watch?v=MHNl4Je6LaY"><b>https://www.youtube.com/watch?v=MHNl4Je6LaY</b></a>
+               </p>
+                  <div class="line"></div>
+                  <div>
+                     <div>
+                        <h3 class="title-hw__lesson">Домашнее задание</h3>
+                        <p class="hw__lesson">Посмотреть и повторить теорию выше. На слейдущем уроке будет тест.</p>
+                     </div>
+                     <h5 class="hw-date__lesson">Сдать 01.01.2021 (до 14:00) </h5>
+                  </div>
+                  <label>
+                     Сдать домашнее задание<br>
+                     <input class="input__lesson" type="file" value="Загрузить домашнее задание">
+                  </label>
+            </div>
+         </div>
+      </div>
+   </div>
+   
+   <script type="text/javascript" src="../main.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Профиль | Easy learn</title>
+   <link rel="icon" type="image/svg" sizes="32x32" href="sprites/logo.svg">
+   <link rel="stylesheet" href="p_css/reset.css">
+   <link rel="stylesheet" href="p_css/styles.css">
+</head>
+<body>
+   <div class="container">
+      <div class="wrapper" id="wrapper">
+         <div class="div-wrapper">
+            <div class="logo__div-wrapper">
+               <a href="../log_into_page/loginto.html"><img class="logo" src="sprites/bookmark.svg" alt="logo"></a>
+               <span class="span__logo-div-wrapper" id="namePage">Профиль</span>
+            </div>
+            <div class="profile__div-wrapper">
+               <a href="profile.html"><img class="profile" src="sprites/user.svg" alt="profile" id="profile"></a>
+            </div>
+         </div>
+      </div>
+      <div class="page">
+         <div class="menu">
+            <a href="home.html" class="subjects">
+               <img class="img__subjects" src="sprites/lesson.svg" alt="book">
+            </a>
+            <!-- <a href="#" class="pupil">
+               <img class="img__pupil" src="sprites/students.svg" alt="people">
+            </a> -->
+            <a href="statistics.html" class="statistics">
+               <img class="img__statistics" src="sprites/statistics.svg" alt="statistics">
+            </a>
+         </div>
+         <div class="profile-page" id="profilePage">
+            <div class="page__profile-page">
+               <div id="personDiv">
+                  <form id="upload-image" enctype="multipart/form-data">
+                     <img id="personImg" src="sprites/g-user.svg" alt="person_prof">
+                     <img  id="personClip" src="sprites/clip.svg" alt="person_clip">
+                     <a href="#"><input type="file" id="personProf"></a>
+                     <div id="result"></div>
+                  </form>
+               </div>
+               <div class="info-page__profile-page">
+                  <div class="field-info__info-page">
+                     <span>Фамилия</span>
+                     <div id="surname-info">Нельская</div>
+                  </div>
+                  <div class="field-info__info-page">
+                     <span>Имя</span>
+                     <div id="name-info">Полина</div>
+                  </div>
+                  <div class="field-info__info-page">
+                     <span>Класс</span>
+                     <div id="class-info">9-А</div>
+                  </div>
+                  <div class="field-info__info-page">
+                     <span>E-mail</span>
+                     <div id="mail-info">knigomanka@ukr.net</div>
+                  </div>
+                  <div class="field-info__info-page">
+                     <span>Позиция</span>
+                     <div id="pos-info">Ученик</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   
+   <script type="text/javascript" src="../jQuery.js"></script>
+   <script type="text/javascript" src="../main.js"></script>
+</body>
+</html>

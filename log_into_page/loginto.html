@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Войти в аккаунт | Easy learn</title>
+   <link rel="icon" type="image/svg" sizes="32x32" href="sprites/logo.svg">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+   <div class="container">
+      <img src="sprites/bookmark.svg" alt="logo" class="logo">
+      <div class="loginto">
+         <img src="img/students.jpg" alt="background" class="background__loginto">
+         <form class="form-loginto">
+            <legend>Вход</legend>
+            <p><input type="email" id="email" placeholder="Email" class="email__form-loginto"><span id="error-message1"></span></p>
+            <p><input type="password" id="password" placeholder="Пароль" class="password__form-loginto"><span id="error-message2"></span></p>
+            <a href="#" id="buttonSub"><input id="inputBtnSub" type="button" value="Войти" class="button__form-loginto" onclick="checkEmail(), checkPassword(), openHomePage();"></a>
+         </form>
+      </div>
+   </div>
+   
+   <script type="text/javascript" src="../main.js"></script>
+</body>
+</html>

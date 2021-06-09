@@ -1,0 +1,405 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
+  background: rgb(228, 228, 228);
+}
+
+.wrapper {
+  background: #7ace88;
+  width: 100%;
+  height: 60px;
+}
+
+.div-wrapper {
+  display: flex;
+  flex-direction: row;
+  max-width: 74%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.logo__div-wrapper {
+  display: flex;
+  align-items: center;
+  width: 60px;
+  height: fit-content;
+  margin-left: 15px;
+}
+
+.profile__div-wrapper {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+}
+
+.logo {
+  height: 60px;
+}
+
+.span__logo-div-wrapper {
+  font-weight: bold;
+  color: #fff;
+  font-size: 18px;
+  margin-left: 10px;
+  white-space: nowrap;
+}
+
+.profile {
+  height: 40px;
+  width: 40px;
+  margin-top: 23%;
+}
+
+.img__subjects,
+.img__statistics {
+  height: 35px;
+  width: 35px;
+}
+
+.img__pupil {
+  height: 35px;
+  width: 35px;
+}
+
+.page {
+  display: flex;
+  flex-direction: row;
+  margin: 20px auto;
+  width: fit-content;
+  max-width: 81%;
+  /* max-width: 1150px; */
+  justify-content: center;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 5px;
+  height: fit-content;
+  cursor: pointer;
+  box-shadow: 2px 3px 16px -6px rgb(0, 0, 0, 0.3);
+  margin: 10px 10px 0px 68px;
+}
+
+.menu a {
+  width: 75px;
+  height: 70px;
+  border-bottom: 2px solid rgb(228, 228, 228);
+  transition-duration: 0.3s;
+}
+
+.menu a:last-child {
+  border-bottom: none;
+}
+
+.menu a:hover {
+  background: rgb(245, 245, 245);
+  border-radius: 5px;
+}
+
+.menu a img {
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+.choose-subjects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1150px;
+}
+
+.choose-subjects a {
+  width: fit-content;
+  margin: 12px 20px 12px 20px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #9579d1;
+  transition-duration: 0.3s;
+  text-decoration: none;
+}
+
+.choose-subjects a:hover {
+  color: #7ace88;
+}
+
+.c-choose-subject {
+  display: flex;
+  flex-direction: column;
+  width: 230px;
+  height: fit-content;
+  background: #fff;
+  margin: 10px 15px;
+  border-radius: 5px;
+  transition-duration: 0.4s;
+}
+
+.c-choose-subject:hover {
+  box-shadow: 2px 3px 16px -6px rgb(0, 0, 0, 0.5);
+  background: rgb(245, 245, 245);
+  margin-top: -1px;
+}
+
+/* .algebra__choose-subjects:hover .char {
+  display: block;
+  transition-duration: 0.4s;
+  transition-delay: 2s;
+} */
+
+.subject__choose-subject {
+  display: flex;
+  flex-direction: row;
+  background: none;
+  border-radius: none;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 20px;
+}
+
+.subject__choose-subject img {
+  height: 35px;
+  width: 35px;
+}
+
+.subject__choose-subject h3 {
+  line-height: 1.1em;
+}
+
+.c-choose-subject .line {
+  height: 1.5px;
+  background: rgb(228, 228, 228);
+  width: 100%;
+}
+
+.geography__choose-subjects .line,
+.economic__choose-subjects .line,
+.technology__choose-subjects .line {
+  height: 2px;
+}
+
+.choose-subject a {
+  width: fit-content;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.ukrainian__choose-subjects h3,
+.world-literature__choose-subjects h3,
+.english__choose-subjects h3 {
+  max-width: 105px;
+}
+
+.world-history__choose-subjects h3,
+.ukr-literature__choose-subjects h3 {
+  max-width: 100px;
+}
+
+.ukr-history__choose-subjects h3,
+.technology__choose-subjects h3 {
+  max-width: 80px;
+}
+
+.passive {
+  display: none;
+  transition-duration: 0.4s;
+}
+
+.active {
+  display: block;
+}
+
+.lesson {
+  display: none;
+  margin: 10px 55px 0px 15px;
+  /* width: 84%; */
+  width: 1008px;
+  height: 100%;
+}
+
+.lesson5__lesson,
+.lesson__lesson {
+  box-shadow: 2px 3px 16px -6px rgb(0, 0, 0, 0.3);
+  background: #fff;
+  border-radius: 5px;
+  border-top-left-radius: 0px;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+.lesson5__lesson div,
+.lesson__lesson div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.lesson5__lesson div div,
+.lesson__lesson div div {
+  flex-direction: column;
+}
+
+.lesson1__lesson,
+.lesson3__lesson {
+  padding-bottom: 25px;
+}
+
+.lesson1__lesson .hw__lesson,
+.lesson3__lesson .hw__lesson {
+  padding-bottom: 0px;
+}
+
+.lesson1__lesson label,
+.lesson1__lesson .hw-date__lesson,
+.lesson3__lesson label,
+.lesson3__lesson .hw-date__lesson {
+  display: none;
+}
+
+.lesson1__lesson,
+.lesson2__lesson,
+.lesson3__lesson,
+.lesson4__lesson {
+  display: none;
+}
+
+.rec__lesson {
+  display: flex;
+  flex-direction: row;
+  background: none;
+}
+
+.rec__lesson a {
+  text-decoration: none;
+}
+
+.rec__lesson div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 30px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-top: 1px solid #bdbdbd;
+  border-left: 1px solid #bdbdbd;
+}
+
+.rec-passive__lesson {
+  background: #f0f0f0;
+  color: #979797;
+  border-bottom: 1px solid #f0f0f0;
+  transition-duration: 0.3s;
+}
+
+.rec-passive__lesson:hover {
+  margin-top: -5px;
+  border-bottom: 6px solid #f0f0f0;
+}
+
+.rec-active__lesson {
+  background: #fff;
+  color: #000;
+  border-bottom: 1px solid #fff;
+}
+
+.lesson .line {
+  height: 1.5px;
+  background: #e4e4e4;
+  width: 100%;
+}
+
+.name__lesson {
+  padding: 20px 30px 0px 30px;
+  line-height: 1.8em;
+  font-size: 18px;
+  color: #9579d1;
+}
+
+.theme__lesson {
+  padding: 5px 30px 15px 30px;
+  line-height: 1.8em;
+}
+
+.date__lesson,
+.hw-date__lesson {
+  font-size: 14px;
+  color: #979797;
+  padding: 20px 30px 0px 30px;
+  width: fit-content;
+  height: fit-content;
+  white-space: nowrap;
+  line-height: 1.8em;
+}
+
+.letter__lesson {
+  padding: 15px 30px 0px 30px;
+  line-height: 1.8em;
+}
+
+.theory__lesson {
+  padding: 5px 30px 25px 30px;
+  line-height: 1.8em;
+}
+
+.title-hw__lesson {
+  padding: 15px 30px 0px 30px;
+  line-height: 1.8em;
+}
+
+.theory__lesson a {
+  color: #7ace88;
+}
+
+.hw__lesson {
+  padding: 5px 30px 40px 30px;
+  line-height: 1.5em;
+}
+
+.input__lesson {
+  outline: none;
+  display: none;
+}
+
+.theme__lesson,
+.letter__lesson,
+.title-hw__lesson {
+  font-size: 16px;
+  color: #9579d1;
+}
+
+.theory__lesson,
+.hw__lesson {
+  font-size: 14px;
+}
+
+.lesson label {
+  cursor: pointer;
+  margin: 15px 30px;
+  padding: 13px;
+  border-radius: 5px;
+  background: #9579d1;
+  color: #fff;
+  transition-duration: 0.4s;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.lesson label:hover {
+  background: #7ace88;
+}
+
+.sticky {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+}
+
+.backg {
+  margin-top: 0;
+  background: #7ace88;
+  height: 60px;
+  opacity: 1;
+}
